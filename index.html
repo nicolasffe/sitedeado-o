@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Familia de Patas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<header class="container-fluid py-4">
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="#" class="navbar-brand">
+      <img src="imagens/logo_lar_de_adoção-removebg-preview.png" alt="Logo" class="logo">
+    </a>
+    <div class="text-center flex-grow-1 mx-3">
+        <h1 class="display-1 text-center">Familia de Patas</h1>
+        <p class="lead text-center">Não perca tempo e adote um amigo agora mesmo!</p>
+    </div>
+    <button class="btn btn-dark" onclick="toggleModal()">Login</button>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+</body>
+</html>
+</body>
+</html>
+<main>
+  <div class="container text-center mt-5">
+    <h3>Galeria de Nossos Amores</h3>
+    <p class="custom-text">Confira algumas das adoráveis criaturas que estão procurando um lar!</p>
+  </div>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagens/border-collie-1167926_1280.jpg" alt="Dog Image" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/dogs-6463032_1280.jpg" alt="Dog Image" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/huskies-273409_1280.jpg" alt="Dog Image" class="d-block w-100">
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/puppy-1903313_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Bobby</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 4 meses</span> | Tamanho: pequeno | Personalidade: Brincalhão e carinhoso</p>
+            <p class="card-text">Bobby é um cão cheio de energia que adora brincar e receber carinho. Ideal para famílias.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/australian-shepherd-7664795_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Luna</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 3 anos</span> | Tamanho: Pequeno | Personalidade: Tranquila e amigável</p>
+            <p class="card-text">Luna é calma e adora estar ao lado de quem ama. Uma ótima companhia para momentos de relaxamento.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/corgi-6705821_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Max</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 4 anos</span> | Tamanho: Médio | Personalidade: Protetor e fiel</p>
+            <p class="card-text">Max é um cão leal e protetor, ideal para quem procura segurança e carinho ao mesmo tempo.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dachshund-1519374_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Rocky</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 2 anos</span> | Tamanho: Pequeno | Personalidade: Energético e brincalhão</p>
+            <p class="card-text">Rocky adora correr e se divertir. Um ótimo amigo para atividades ao ar livre!</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dog-3277414_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Bella</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 6 anos</span> | Tamanho: Grande | Personalidade: Afetuosa e brincalhona</p>
+            <p class="card-text">Bella é uma cadelinha cheia de amor e energia, perfeita para alegrar seus dias!</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dog-7956828_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Duke</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 6 anos</span> | Tamanho: Médio | Personalidade: Calmo e leal</p>
+            <p class="card-text">Duke é um cão tranquilo que adora momentos relaxantes com seus donos.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dog-8198719_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Chico</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 3 anos</span> | Tamanho: Grande | Personalidade: Brincalhão e curioso</p>
+            <p class="card-text">Chico está sempre pronto para uma nova aventura. Adora explorar novos lugares!</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dog-5021242_1920.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Rex</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 8 meses</span> | Tamanho: Pequeno | Personalidade: Protetor e afetuoso</p>
+            <p class="card-text">Rex é um ótimo cão de guarda, sempre pronto para proteger sua família.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card dog-card h-100 border border-dark shadow-lg" style="background-image: url('imagens/dalmatian-1020790_1280.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Lola</h5>
+            <p class="card-text"><span class="border border-dark p-1">Idade: 5 anos</span> | Tamanho: Grandehttps://portaladocao.com.br/ | Personalidade: Amigável e carinhosa</p>
+            <p class="card-text">Lola é uma companheira leal que adora estar perto de seus donos.</p>
+            <button class="btn btn-dark">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-dark">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-overlay-section">
+    <img src="imagens/dogs-4220163_1280.jpg" alt="Imagem Inspiradora" class="background-image">
+    <div class="overlay-text">
+      <h2>"Adotar é um ato de amor"</h2>
+      <p>Encontre um amigo leal e mude uma vida!</p>
+    </div>
+  </div>
+</main>
+  
+
+<button id="toggleTheme" class="btn btn-dark position-fixed bottom-0 end-0 m-3">Modo escuro</button>
+
+<script>
+  document.getElementById('toggleTheme').onclick = function() {
+    document.body.classList.toggle('bg-dark');
+    document.body.classList.toggle('text-white');
+    document.querySelectorAll('.card').forEach(card => {
+      card.classList.toggle('bg-secondary');
+      card.classList.toggle('text-white');
+    });
+    // Aplica o modo escuro ao modal de login
+    const modalContent = document.querySelector('.modal-content');
+    modalContent.classList.toggle('bg-dark');
+    modalContent.classList.toggle('text-white');
+  }
+  
+  function toggleModal() {
+    var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+    loginModal.show();
+  }
+</script>
+
+<footer class="text-center py-4 spaced-footer">
+    <p>&copy; 2024 Familia de Patas. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  function toggleModal() {
+    var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+    loginModal.show();
+  }
+</script>
+
+</body>
+</html>
